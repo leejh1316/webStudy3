@@ -1,0 +1,88 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  animation: fade 0.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 30%;
+  height: 60%;
+  margin: auto;
+  transition: background-color 0.5s, transform 0.5s, width 0.5s, height 0.5s;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.click-style {
+  background-color: rgba(79, 183, 214, 0.925);
+  transform: translate(0px, -14px);
+}
+
+.hidden-slide-item {
+  position: relative;
+  display: none;
+}
+
+.btn-open {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  height: 40px;
+  width: 40px;
+  border: 0px;
+  border-radius: 90px;
+  background-color: white;
+  cursor: pointer;
+}
+.open-page {
+  object-fit: cover;
+  height: 95%;
+  width: 60%;
+  z-index: 2;
+}
+.prevent-evnet {
+  pointer-events: none;
+}

@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="test.css">
+    <title>test</title>
+</head>
+<body>
+    <div id='grid-test-container'>
+        <span class="grid-test-item0">
+            weather?
+        </span>
+        <div class='grid-test-item1'>
+            <div class='grid-test-item1-box'>
+                <div class='grid-test-item1-box-item0'>
+                    clock?                    
+                </div>
+                <div class='grid-test-item1-box-item1'>
+                    <div class='hidden'>
+                        textbox-input
+                    </div>
+                    <div>
+                        hello-textbox-output
+                    </div>
+                </div>
+                <div class='grid-test-item1-box-item2'>
+                    todo-textbox-input
+                </div>
+                <div class='grid-test-item1-box-item3'>
+                    <div class='grid-test-item1-box-item3-list'>
+                        <li>todo-list-outpdddut</li>
+                        <li>todo-list-outdput</li>
+                        <li>todo-list-outddddddddddput</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="grid-test-item2">
+            writer?
+        </span>
+        <span class="grid-test-item3">
+            wise saying
+        </span>
+    </div>
+</body>
+</html> -->
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>CSS</title>
+		<style>
+			body {
+				font-family: Consolas, monospace;
+			}
+			.jb {
+				box-sizing: border-box;
+				width: 64px;
+				height: 64px;
+				margin: 10px 0px;
+				background-color: orange;
+                transition-duration: 1s;
+			}
+			/* input:checked ~ .jb {
+				width: 100%;
+				border-radius: 20px;
+				background-color: red;
+			} */
+			.jb1:hover {
+				transition-property: all;
+				width: 100%;
+				border-radius: 20px;
+				background-color: red;
+
+			}
+			.jb2 {
+				transition-property: width, background-color;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="checkbox">
+		<p>transition-property: all</p>
+		<div class="jb jb1"></div>
+		<p>transition-property: width, background-color</p>
+		<div class="jb jb2"></div>
+	</body>
+</html>

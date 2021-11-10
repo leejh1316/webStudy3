@@ -1,0 +1,242 @@
+/* body {
+  margin: 0px;
+  background-color: darkgrey;
+  position: fixed;
+} */
+.grid-container-page {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 3% 91% 3% 3%;
+  z-index: 1;
+}
+.grid-container-item0-weather {
+  padding-right: 5%;
+  color: white;
+  padding-top: 10px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: white;
+  display: flex;
+  font-style: italic;
+  justify-content: flex-end;
+}
+.grid-container-item1 {
+  display: grid;
+  grid-template-columns: 30%;
+  grid-template-rows: 80%;
+  place-content: center;
+}
+.grid-container-item1-box {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 15% 10% 55% 5%;
+}
+.grid-container-item1-box-item-clock {
+  font-size: 40px;
+  font-family: "HSGaeulSenggak20";
+  text-align: center;
+  margin: auto;
+}
+[class="0.jpg"] {
+  color: rgba(21, 39, 207, 0.952);
+}
+[class="1.png"] {
+  color: rgba(255, 255, 255, 0.815);
+}
+[class="2.jpg"] {
+  color: rgb(255, 255, 255);
+}
+[class="3.jpg"] {
+  color: rgba(70, 206, 240, 0.925);
+}
+
+.grid-container-item1-box-item-login-greeting {
+  position: relative;
+  margin: auto;
+  font-family: "HSGaeulSenggak20";
+}
+#greeting {
+  font-size: 20pt;
+  color: white;
+}
+.name-input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: white 2px solid;
+  color: white;
+  display: block;
+  transition: all ease-in-out 0.3s;
+}
+.name-input:hover {
+  background-color: rgba(111, 86, 235, 0.274);
+}
+.name-input:focus {
+  /* transform: translate(0px, -5px); */
+  box-shadow: 0px 2px 0px 0px rgba(24, 23, 29, 0.753);
+  outline-style: none;
+}
+.input-button {
+  background-color: rgba(255, 255, 255, 0.815);
+  display: block;
+  margin-top: 3px;
+  margin-left: 72%;
+  cursor: pointer;
+  padding: 0.2rem 0.3rem;
+  border: none;
+  font-family: "Cafe24Ssurround";
+  font-size: 9pt;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.11),
+    0 2px 4px -1px rgba(0, 0, 0, 0.6);
+  transition: all ease 0.3s 0s;
+}
+.input-button:hover {
+  background-color: rgb(255, 255, 255);
+  outline-style: none;
+  /* transform: translate(0px, -3px); */
+}
+
+.grid-container-item1-box-item-todo-input {
+  text-align: center;
+  margin: auto;
+}
+#todo-form input {
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  border-bottom: oldlace 2px solid;
+  color: rgb(255, 255, 255);
+  transition: all ease-in-out 0.2s;
+}
+#todo-form input:focus {
+  /* transform: translate(0px, -5px); */
+  outline-style: none;
+  border-color: rgb(244, 248, 252);
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.274);
+}
+/* #todo-form input:hover {
+  background-color: rgba(111, 86, 235, 0.274);
+} */
+
+.grid-container-item1-box-item-todo-list {
+  position: relative;
+  max-width: 100%;
+  max-height: 95%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.grid-container-item1-box-item-todo-list::-webkit-scrollbar {
+  width: 8px;
+  left: 100%;
+}
+.grid-container-item1-box-item-todo-list::-webkit-scrollbar-thumb {
+  background-color: rgba(24, 23, 29, 0.753);
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.grid-container-item1-box-item-todo-list::-webkit-scrollbar-track {
+  background-color: gray;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+.grid-container-item1-box-item-todo-list-show {
+  text-align: justify;
+  color: white;
+  position: absolute;
+  list-style: none;
+  margin: 0px 0px 0px;
+  padding: 0px 0px 0px;
+  font-family: "Cafe24SsurroundAir";
+}
+
+.todo-btn {
+  text-align: center;
+  margin: auto;
+}
+.grid-container-item1-box-item-todo-list-button {
+  appearance: none;
+  font-family: "Cafe24Ssurround";
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.815);
+  border-radius: 4px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.11),
+    0 2px 4px -1px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+.grid-container-item1-box-item-todo-list-button:hover {
+  background-color: rgb(255, 255, 255);
+  /* transform: translate(0px, -3px); */
+  outline: 0;
+}
+
+.grid-container-item2,
+.grid-container-item3 {
+  text-align: center;
+  font-family: "Cafe24SsurroundAir";
+  color: white;
+}
+#backImg {
+  overflow: hidden;
+}
+.bgImg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.hidden {
+  display: none;
+}
+
+/* hs가을생각체 */
+@font-face {
+  font-family: "HSGaeulSenggak20";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSGaeulSenggak20.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  /*카페24써라운드*/
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cafe24SsurroundAir";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@media (max-width: 767px) {
+  .grid-container-item1 {
+    grid-template-columns: 80%;
+    grid-template-rows: 80%;
+  }
+  .grid-container-item2,
+  .grid-container-item3 {
+    font-size: 7pt;
+  }
+  .grid-container-item1-box-item-todo-input {
+    top: 6px;
+  }
+  #todo-form input:focus {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.274);
+  }
+  /* #todo-form input:hover {
+    transform: translate(0px, 30px);
+  } */
+  .input-button {
+    height: auto;
+  }
+}

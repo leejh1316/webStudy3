@@ -1,0 +1,130 @@
+<link rel="stylesheet" href="pages/web_study2/css/style.css" />
+<body>
+  <div class="grid-container-page">
+    <span class="grid-container-item0-weather">
+      <span id="weather">
+        <span></span>
+        <span id="conutry"></span>
+        <span></span>
+      </span>
+    </span>
+    <div class="grid-container-item1">
+      <div class="grid-container-item1-box">
+        <div class="grid-container-item1-box-item-clock">
+          <div id="clock">00:00:00</div>
+        </div>
+        <div class="grid-container-item1-box-item-login-greeting">
+          <form id="login-form" class="hidden box-login">
+            <input
+              type="text"
+              required
+              maxlength="15"
+              placeholder="What is your name?"
+              class="name-input"
+            />
+            <input type="submit" value="LogIn" class="login input-button" />
+          </form>
+          <form class="box-greeting hidden">
+            <div id="greeting"></div>
+            <input type="submit" value="LogOut" class="logOut input-button" />
+          </form>
+        </div>
+        <div class="grid-container-item1-box-item-todo-input">
+          <form id="todo-form">
+            <input type="text" placeholder="write text" required />
+          </form>
+        </div>
+        <div class="grid-container-item1-box-item-todo-list">
+          <div id="todo-list">
+            <ol class="grid-container-item1-box-item-todo-list-show"></ol>
+          </div>
+        </div>
+        <div class="todo-btn">
+          <button
+            id="btnListDelete"
+            class="hidden grid-container-item1-box-item-todo-list-button"
+          >
+            삭제
+          </button>
+        </div>
+      </div>
+    </div>
+    <span class="grid-container-item2">
+      <span class="author"></span>
+    </span>
+    <span class="grid-container-item3">
+      <span class="quote"></span>
+    </span>
+  </div>
+  <div id="backImg"></div>
+  <script src="pages/web_study2/js/greetings.js"></script>
+  <script src="pages/web_study2/js/quotes.js"></script>
+  <script src="pages/web_study2/js/clock.js"></script>
+  <script src="pages/web_study2/js/background.js"></script>
+  <script src="pages/web_study2/js/todo.js"></script>
+  <script src="pages/web_study2/js/weather.js"></script>
+</body>
+<!-- <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <title></title>
+      <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+      <div class="weather-top">  
+        <div id='weather'>
+          <span></span>
+          <span id='conutry'></span>
+          <span></span>
+        </div>
+      </div>
+      <div id='centerPosition'>
+      <div class='grid-item-container2'>
+        <div class="gridItem">
+          <h2 id="clock">00:00:00</h2>
+        </div>
+        <div class="item1">
+          <form id="login-form" class="hidden">
+            <input
+              type="text"
+              required
+              maxlength="15"
+              placeholder="What is your name?"
+            />
+            <input type="submit" value="Log In" />
+          </form>
+        </div>
+        <div class="item2">
+          <h1 id="greeting" class="hidden"></h1>
+        </div>
+        <div id ='todo-sort'> 
+          <div class="item3">
+            <form id="todo-form">
+              <input type="text" placeholder="Write a To do And Press Enter" required>
+            </form>
+          </div>
+          <div class="item4">  
+            <div id='todo-list'>
+              <ul></ul>
+              <input id='btnListDelete' type="button" value="전체 삭제" class="hidden"></input>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item-container3">  
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="backImg"></div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html> -->

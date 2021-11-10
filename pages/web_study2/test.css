@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    background-color:darkgrey;
+    position: fixed;
+}
+#grid-test-container{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 3vh 91vh 3vh 3vh;
+}
+.grid-test-item0{
+    display: flex;
+    font-style: italic;
+    justify-content: flex-end;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: white;
+}
+
+.grid-test-item1{
+    display: grid;
+    grid-template-columns:30%;
+    grid-template-rows: 80%;
+    place-content: center;
+}
+.grid-test-item1-box{
+    background-color: rgba(35, 69, 131, 0.603);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 10% 50%;
+}
+.grid-test-item1-box-item0{
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+.grid-test-item1-box-item1{
+    position: relative;
+    margin: auto;
+}
+
+.grid-test-item1-box-item2{
+    text-align: center;
+    margin: auto;
+}
+
+.grid-test-item1-box-item3{
+    position: relative;
+    left: 35%;
+}
+
+.grid-test-item1-box-item3-list{
+    width: 65%;
+    text-align: justify;
+    position: absolute;
+    list-style: none;
+}
+
+.grid-test-item2 ,.grid-test-item3{
+    text-align: center;
+}
+
+
+
+.hidden{
+    display: none;
+}
