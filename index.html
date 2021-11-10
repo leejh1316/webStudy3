@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/code.css" />
+  </head>
+  <body>
+    <div class="grid-container grid-hidden">
+      <div class="grid-page">
+        <div>
+          <button class="close-btn">
+            <img class="prevent-evnet close-img" src="img/close-button.svg" />
+          </button>
+        </div>
+        <div class="ajax-container">
+          <div class="code-list code-hidden">
+            <div class="code-html">html</div>
+            <div class="code-js">javascript</div>
+            <div class="code-css">css</div>
+          </div>
+          <div class="ajax-show"></div>
+        </div>
+        <div class="bottom">
+          <div class="bottom-style">
+            <div class="bottom-bt btMain">main</div>
+          </div>
+          <div class="bottom-style">
+            <div class="bottom-bt btCode">code</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper swiper-event">
+        <div class="swiper-slide">
+          Slide1
+          <div class="hidden-slide-item">
+            <button class="btn-open">
+              <img class="prevent-evnet" src="img/btImg0.png" />
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          Slide2
+          <div class="hidden-slide-item">
+            <button class="btn-open">
+              <img class="prevent-evnet" src="img/btImg0.png" />
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          Slide3
+          <div class="hidden-slide-item">
+            <button class="btn-open">
+              <img class="prevent-evnet bt-img" src="img/btImg0.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="javascript/slide.js"></script>
+    <script src="javascript/page.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
+</html>
