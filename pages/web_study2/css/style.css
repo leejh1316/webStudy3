@@ -40,16 +40,16 @@
   margin: auto;
 }
 [class="0.jpg"] {
-  color: rgba(21, 39, 207, 0.952);
-}
-[class="1.png"] {
-  color: rgba(255, 255, 255, 0.815);
-}
-[class="2.jpg"] {
   color: rgb(255, 255, 255);
 }
+[class="1.png"] {
+  color: rgb(255, 255, 255);
+}
+[class="2.jpg"] {
+  color: rgb(66, 66, 66);
+}
 [class="3.jpg"] {
-  color: rgba(70, 206, 240, 0.925);
+  color: rgb(255, 255, 255);
 }
 
 .grid-container-item1-box-item-login-greeting {
@@ -183,9 +183,10 @@
   overflow: hidden;
 }
 .bgImg {
+  display: block;
   width: 100%;
   height: 100%;
-  position: fixed;
+  position: absolute;
   object-fit: cover;
   top: 0;
   left: 0;

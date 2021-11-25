@@ -8,7 +8,6 @@ const slideHidden = document.querySelector(".swiper");
 let checkOpen;
 let btIndex;
 let index;
-
 //중복제거용
 const CLICK_STYLE = "click-style";
 const HIDDEN_ITEM = "hidden-slide-item";
@@ -30,7 +29,10 @@ const swiper = new Swiper(".mySwiper", {
     },
   },
 });
-
+const activeBt = document.querySelector(
+  ".swiper-slide-active .hidden-slide-item"
+);
+console.dir(activeBt);
 swiper.on("click", function () {
   const selectSlide = slideAll[this.clickedIndex];
   const selectHidden = hiddenAll[this.clickedIndex];
@@ -139,6 +141,9 @@ function closePageEvent() {
   slideHidden.classList.remove(HIDDEN_ITEM);
   slideHidden.classList.add("slide-fade-in");
   pageShow.style.backgroundImage = "url('')";
+  codeList.classList.add("code-hidden");
+  pageCheck.style.textAlign = "center";
 }
+activeBt.classList.remove("hidden-slide-item");
 closePage.addEventListener("click", closePageEvent);
 buttonFunctions.addEvent();

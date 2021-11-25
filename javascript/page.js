@@ -2,6 +2,16 @@ const buttonCode = document.querySelector(".btCode");
 const buttonMain = document.querySelector(".btMain");
 const pageCheck = document.querySelector(".ajax-show");
 const codeList = document.querySelector(".code-list");
+
+// page2
+const clockJsGreetings = document.querySelector(".clock-js-greetings");
+const clockJsQuotes = document.querySelector(".clock-js-quotes");
+const clockJsClock = document.querySelector(".clock-js-clock");
+const clockJsBackground = document.querySelector(".clock-js-background");
+const clockJsTodo = document.querySelector(".clock-js-todo");
+const clockJsWeather = document.querySelector(".clock-js-weather");
+const clockHtmlCode = document.querySelector(".code-html");
+//
 const SLIDE_MAIN = "slidemain";
 const SLIDE_CODE = "slidecode";
 let mainLock = true;
@@ -17,7 +27,7 @@ function changePage(mainCheck, codeCheck) {
       codeCheck,
       "web_study2",
       "web_study2.html",
-      "code.html"
+      "html_code.html"
     );
   }
   if (pageCheck.classList[1] == "2-page") {
@@ -35,11 +45,15 @@ function ifElsePage(
   if (mainCheck) {
     change(`pages/${slideFolderName}/${slideMainFileName}`);
     codeList.classList.add("code-hidden");
+    pageCheck.style.textAlign = "center";
     lock.main();
   } else if (codeCheck) {
-    change(`pages/${slideFolderName}/${slideCodeFileName}`);
+    change(`pages/${slideFolderName}/codePages/${slideCodeFileName}`);
+    if (pageCheck.classList[1] == "1-page") {
+      codeList.classList.remove("code-hidden");
+    }
     pageCheck.style.backgroundImage = "url('')";
-    codeList.classList.remove("code-hidden");
+    pageCheck.style.textAlign = "left";
     lock.code();
   }
 }
@@ -77,5 +91,32 @@ function change(url) {
     },
   });
 }
+
+function clockAddEvent(e) {
+  // console.dir(e.target.innerHTML);
+  if (e.target.innerHTML == "greetings.js") {
+    change(`pages/web_study2/codePages/greetings_code.html`);
+  } else if (e.target.innerHTML == "quotes.js") {
+    change(`pages/web_study2/codePages/quotes_code.html`);
+  } else if (e.target.innerHTML == "clock.js") {
+    change(`pages/web_study2/codePages/clock_code.html`);
+  } else if (e.target.innerHTML == "background.js") {
+    change(`pages/web_study2/codePages/background_code.html`);
+  } else if (e.target.innerHTML == "todo.js") {
+    change(`pages/web_study2/codePages/todo_code.html`);
+  } else if (e.target.innerHTML == "weather.js") {
+    change(`pages/web_study2/codePages/weather_code.html`);
+  } else if (e.target.innerHTML == "html") {
+    change(`pages/web_study2/codePages/html_code.html`);
+  }
+}
+
 buttonCode.addEventListener("click", clickCode);
 buttonMain.addEventListener("click", clickMain);
+clockJsBackground.addEventListener("click", clockAddEvent);
+clockJsClock.addEventListener("click", clockAddEvent);
+clockJsGreetings.addEventListener("click", clockAddEvent);
+clockJsQuotes.addEventListener("click", clockAddEvent);
+clockJsTodo.addEventListener("click", clockAddEvent);
+clockJsWeather.addEventListener("click", clockAddEvent);
+clockHtmlCode.addEventListener("click", clockAddEvent);
