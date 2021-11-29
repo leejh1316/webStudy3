@@ -103,3 +103,9 @@ body {
 .prevent-evnet {
   pointer-events: none;
 }
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 45%;
+  }
+}

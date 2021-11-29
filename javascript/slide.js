@@ -27,6 +27,9 @@ const swiper = new Swiper(".mySwiper", {
     init: function () {
       console.log("swiper initialized");
     },
+    activeIndexChange: function () {
+      hiddenAll[this.realIndex].classList.remove("hidden-slide-item");
+    },
   },
 });
 const activeBt = document.querySelector(
@@ -36,6 +39,7 @@ console.dir(activeBt);
 swiper.on("click", function () {
   const selectSlide = slideAll[this.clickedIndex];
   const selectHidden = hiddenAll[this.clickedIndex];
+  console.dir(selectSlide);
   index = this.clickedIndex;
   const checkClass = classFunctions.location(
     selectSlide.classList, //selectClass
@@ -114,7 +118,7 @@ const buttonFunctions = {
 
 function findFetchPage(index) {
   if (index == 0) {
-    return "pages/Slide1/slidemain";
+    return "pages/Slide1/vending_machine.html";
   } else if (index == 1) {
     return "pages/web_study2/web_study2.html";
   } else if (index == 2) {
@@ -142,6 +146,8 @@ function closePageEvent() {
   slideHidden.classList.add("slide-fade-in");
   pageShow.style.backgroundImage = "url('')";
   codeList.classList.add("code-hidden");
+  codeListPage1.classList.add("code-hidden");
+  // codeListPage3.classList.add("code-hidden");
   pageCheck.style.textAlign = "center";
 }
 activeBt.classList.remove("hidden-slide-item");

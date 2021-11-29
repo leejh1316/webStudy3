@@ -1,0 +1,132 @@
+<img
+  style="
+    height: auto;
+    width: 50%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+  "
+  src="pages/Slide1/imgs/1.png"
+/>
+<div style="text-align: left">
+  <div>초기화면은 위 그림과 같다. 각 버튼들은 다음과 같은 기능을 담당한다.</div>
+  <div style="padding-left: 15px">
+    1) 관리자버튼 – 우측 상단에 있는 관리자 버튼을 누르면 패스워드가 표시되고,
+    DB를 이용하여 재고의 수량을 추가하고 저장하는 기능이 있다.
+  </div>
+  <div style="padding-left: 15px">
+    2) 과자버튼 – 현재 DB에 남아있는 과자의 수량에 맞춰 [과자x0] 에 하나씩
+    증가하며 결제 금액에 있는 label에 총 금액이 결제되어 표시된다.
+  </div>
+  <div style="padding-left: 15px">
+    3) 취소버튼 – 각 lable에 적힌 값을 초기화한다.
+  </div>
+  <div style="padding-left: 15px">4) 결제버튼 – 결제창이 표시된다.</div>
+</div>
+
+<img
+  style="
+    height: auto;
+    width: 50%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+  "
+  src="pages/Slide1/imgs/2.png"
+/>
+<div style="text-align: left">
+  <div>
+    관리자 버튼을 눌렀을 때 나타나는 화면이다. 초기 비밀번호는 DB에서 1234로
+    정했다.
+  </div>
+  <div>각 버튼들의 다음과 같은 기능을 담당한다.</div>
+  <div style="padding-left: 15px">
+    1) 숫자버튼 – 각 숫자에 맞는 값이 TextBrowser(TB)에 추가된다.
+  </div>
+  <div style="padding-left: 15px">
+    2) 확인버튼 – TB에 적힌 값과 DB에 적힌 비밀번호를 비교하여 참일시 다음
+    창으로 이동한다.
+  </div>
+  <div style="padding-left: 15px">
+    3) 지우기버튼 – TB에 적힌 값을 초기화한다.
+  </div>
+</div>
+
+<img
+  style="
+    height: auto;
+    width: 50%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+  "
+  src="pages/Slide1/imgs/3.png"
+/>
+<div style="text-align: left">
+  <div>
+    확인버튼을 눌러 패스워드가 참일시 넘어오게 되는 창이다. 과자 업데이트, 과자
+    정보, 팔린 항목으로 구분되어 있다.
+  </div>
+  <div>1) 과자 업데이트</div>
+  <div style="padding-left: 15px">
+    1-1) 과자 종목 - 각 과자들을 라디오버튼 형식으로 하나만 선택할 수 있다.
+  </div>
+  <div style="padding-left: 15px">
+    1-2) 재고 – 화살표 버튼으로 하나씩 증가하거나 감소시킨 값을 lable에
+    표시한다.
+  </div>
+  <div style="padding-left: 15px">
+    1-3) 확인버튼 – 고른 과자와 재고에 적힌 값을 DB에 전송하여 수정시킨다.
+  </div>
+  <div>2) 과자 정보</div>
+  <div style="padding-left: 15px">
+    2-1) TB – DB에 과자정보가 담긴 table의 데이터를 보여준다.
+  </div>
+  <div style="padding-left: 15px">
+    2-2) 새로고침 버튼 – DB에 과자정보가 담긴 table을 새로 읽어 TB에 표시한다.
+  </div>
+  <div>3) 팔린 항목</div>
+  <div style="padding-left: 15px">
+    3-1) TB – DB에 팔린 항목이 담긴 table의 데이터를 보여준다.
+  </div>
+  <div style="padding-left: 15px">
+    3-2) 새로고침 버튼 – DB에 팔린 항목이 담긴 table을 새로 읽어 TB에 표시한다.
+  </div>
+</div>
+
+<img
+  style="
+    height: auto;
+    width: 50%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+  "
+  src="pages/Slide1/imgs/4.png"
+/>
+<div style="text-align: left">
+  <div>
+    초기화면에서 결제버튼을 누르면 새롭게 나오는 창이다. 각 버튼들은 다음과 같은
+    기능을 한다.
+  </div>
+  <div style="padding-left: 15px">
+    1) 확인버튼 – NFC가 활성화 된다. 카드값을 읽으면 모터가 작동되며 각 상품의
+    수량에 맞춰 모터의 작동시간이 달라지며, lable이 “결제성공 상품이 나올 때
+    까지 기다려 주세요” 라고 표기되면서 DB에서 팔린 항목과 재고를 수정한다.
+    반대로 카드값을 읽지 못하면 lable에 “결제실패” 가 표기된다.
+  </div>
+  <div style="padding-left: 15px">2) 나가기버튼 – 결제창에서 나가진다.</div>
+  <div style="height: 10px"></div>
+</div>
+
+<div>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/VFcnGQrReUs"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>

@@ -74,3 +74,13 @@
 .grid-hidden {
   display: none;
 }
+
+@media (max-width: 768px) {
+  .grid-container {
+    width: 100%;
+  }
+  .ajax-show {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
