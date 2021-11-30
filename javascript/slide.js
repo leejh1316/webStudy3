@@ -18,7 +18,7 @@ const swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   slidesPerView: "auto",
   grabCursor: true,
-  slideToClickedSlide: true,
+  slideToClickedSlide: false,
   // pagination: {
   //   el: ".swiper-pagination",
   //   clickable: true,
